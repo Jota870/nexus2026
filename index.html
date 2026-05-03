@@ -159,6 +159,36 @@
             </div>
         </section>
 
+        <!-- Testimonials Section -->
+        <section id="testimonios" class="testimonials container">
+            <div class="section-header">
+                <h2>Lo Que Dicen <span class="gradient-text">Nuestros Clientes</span></h2>
+                <p>Empresas que ya se adaptaron al mercado laboral del futuro.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="glass-card testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">"Implementaron agentes de IA en nuestro departamento de logística y redujimos costos operativos en un 40% en solo 3 meses. El ROI es brutal."</p>
+                    <div class="author">
+                        <div class="author-info">
+                            <h4>Carlos Mendoza</h4>
+                            <p>Director de Operaciones, TechLogis</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-card testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">"Sus estrategias de Growth Marketing y automatización de embudos nos trajeron +5,000 leads calificados B2B. Nexus 2026 es el futuro."</p>
+                    <div class="author">
+                        <div class="author-info">
+                            <h4>Laura Gómez</h4>
+                            <p>CMO, Finova Solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Pricing Section -->
         <section id="planes" class="pricing container">
             <div class="section-header">
@@ -197,17 +227,56 @@
             </div>
         </section>
         
+        <!-- FAQ Section -->
+        <section id="faq" class="faq container">
+            <div class="section-header">
+                <h2>Preguntas <span class="gradient-text">Frecuentes</span></h2>
+                <p>Todo lo que necesitas saber antes de escalar tu negocio con nosotros.</p>
+            </div>
+            <div class="faq-accordion">
+                <div class="accordion-item glass-card">
+                    <button class="accordion-header">
+                        ¿Cómo funciona exactamente la automatización con IA?
+                        <i data-lucide="chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Analizamos tus procesos manuales y conectamos herramientas de IA generativa (como ChatGPT o modelos propios) para que tareas repetitivas se hagan en segundos, reduciendo tu carga operativa drásticamente.</p>
+                    </div>
+                </div>
+                <div class="accordion-item glass-card">
+                    <button class="accordion-header">
+                        ¿Por qué un modelo de "Retainer" mensual?
+                        <i data-lucide="chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>A diferencia de contratar un empleado a tiempo completo, nuestro Retainer mensual te da acceso a todo un equipo de expertos (Humano + IA) que actualizan tus sistemas constantemente, sin costos ocultos ni prestaciones.</p>
+                    </div>
+                </div>
+                <div class="accordion-item glass-card">
+                    <button class="accordion-header">
+                        ¿En cuánto tiempo veré resultados?
+                        <i data-lucide="chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Generalmente implementamos las primeras optimizaciones en las primeras 2 semanas. Notarás un ahorro de tiempo y un aumento en prospectos (Leads) en el primer mes de trabajo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Contact CTA -->
         <section id="contacto" class="cta-section container">
             <div class="cta-card glass-card">
                 <h2>¿Listo para el mercado laboral del 2026?</h2>
                 <p>Deja que nuestros agentes de IA y expertos híbridos hagan el trabajo pesado. Agenda una consultoría gratuita de 15 minutos.</p>
-                <form class="lead-form" action="https://formsubmit.co/jotagaitan10@gmail.com" method="POST">
+                <form id="contactForm" class="lead-form" action="https://formsubmit.co/jotagaitan10@gmail.com" method="POST">
                     <input type="hidden" name="_subject" value="¡Nuevo cliente corporativo de Nexus 2026!">
                     <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_autoresponse" value="¡Gracias por tu interés en Nexus 2026! Hemos recibido tu solicitud y un asesor (o uno de nuestros agentes de IA) se pondrá en contacto contigo pronto.">
                     <input type="email" name="email" placeholder="Tu correo corporativo" required>
                     <button type="submit" class="btn btn-primary">Agendar Consultoría</button>
                 </form>
+                <div id="formMessage" class="form-message" style="display: none;"></div>
             </div>
         </section>
     </main>
